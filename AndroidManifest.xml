@@ -22,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.spawnmore.overlord.feeding.MainFeedingActivity"
+            android:label="@string/title_activity_main_feeding" >
+        </activity>
     </application>
 
 </manifest>

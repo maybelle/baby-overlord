@@ -1,8 +1,13 @@
 package com.spawnmore.overlord;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Toast;
+
+import com.spawnmore.overlord.feeding.MainFeedingActivity;
 
 public class LauncherActivity extends Activity {
 
@@ -20,4 +25,9 @@ public class LauncherActivity extends Activity {
         return true;
     }
     
+    public void onFeedingButtonClicked(View view) {
+    	Toast.makeText(this, "Feeding button clicked!", Toast.LENGTH_SHORT).show();
+    	Intent intent = new Intent(this, MainFeedingActivity.class);
+    	startActivity(intent);
+    }
 }
